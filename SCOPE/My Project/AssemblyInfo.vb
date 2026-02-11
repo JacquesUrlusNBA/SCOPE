@@ -9,10 +9,10 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("SCOPE")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyDescription("SBR Creation for Other GAAP Package")>
+<Assembly: AssemblyCompany("The Royal Netherlands Institute of Chartered Accountants")>
 <Assembly: AssemblyProduct("SCOPE")>
-<Assembly: AssemblyCopyright("Copyright ©  2026")>
+<Assembly: AssemblyCopyright("NO COPYRIGHT")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
