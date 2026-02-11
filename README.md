@@ -6,4 +6,4 @@ To facilitate this, a dedicated entry point has been made available by the Dutch
 
 SCOPE (**S**BR **C**reation for **O**ther GAAP **P**ackag**e**) prepares the required Inline XBRL document and combines it with the annual accounts into a Report Package, which can subsequently be filed.
 
-A compiled version of SCOPE can be found in the map 'Program'. The application is signed by the 'Nederlandse Beroepsorganisatie van Accountants'. A complete installtion can be found at the releases.
+A compiled version of SCOPE can be found in the map 'Program'. The application is signed by the 'Nederlandse Beroepsorganisatie van Accountants'. If specific dll's are needed a complete installation can be found at the releases.
