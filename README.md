@@ -5,3 +5,5 @@ According to the document “Regelgevende Technische Standaard (RTS) van het SBR
 To facilitate this, a dedicated entry point has been made available by the Dutch Chamber of Commerce (KVK). The Inline XBRL document based on this entry point must be included in a Report Package together with the annual accounts.
 
 SCOPE (**S**BR **C**reation for **O**ther GAAP **P**ackag**e**) prepares the required Inline XBRL document and combines it with the annual accounts into a Report Package, which can subsequently be filed.
+
+A compiled version of SCOPE can be found in the map 'Program'. The application is signed by the 'Nederlandse Beroepsorganisatie van Accountants'.
