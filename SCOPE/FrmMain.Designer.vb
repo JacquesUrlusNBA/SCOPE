@@ -68,9 +68,9 @@ Partial Class FrmMain
         '
         'CmdCreate
         '
-        Me.CmdCreate.Location = New System.Drawing.Point(632, 512)
+        Me.CmdCreate.Location = New System.Drawing.Point(674, 488)
         Me.CmdCreate.Name = "CmdCreate"
-        Me.CmdCreate.Size = New System.Drawing.Size(75, 23)
+        Me.CmdCreate.Size = New System.Drawing.Size(80, 22)
         Me.CmdCreate.TabIndex = 18
         Me.CmdCreate.Text = "Create"
         Me.CmdCreate.UseVisualStyleBackColor = True
@@ -105,9 +105,9 @@ Partial Class FrmMain
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.TxtKVKNumber)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(776, 346)
+        Me.GroupBox1.Size = New System.Drawing.Size(828, 330)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mandatory elements (RTS - Annex II - 3)"
@@ -116,15 +116,15 @@ Partial Class FrmMain
         '
         Me.CmbArticle408.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbArticle408.FormattingEnabled = True
-        Me.CmbArticle408.Location = New System.Drawing.Point(224, 315)
+        Me.CmbArticle408.Location = New System.Drawing.Point(239, 300)
         Me.CmbArticle408.Name = "CmbArticle408"
-        Me.CmbArticle408.Size = New System.Drawing.Size(121, 21)
+        Me.CmbArticle408.Size = New System.Drawing.Size(129, 21)
         Me.CmbArticle408.TabIndex = 14
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(7, 318)
+        Me.Label15.Location = New System.Drawing.Point(8, 303)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(198, 13)
         Me.Label15.TabIndex = 28
@@ -133,16 +133,16 @@ Partial Class FrmMain
         'DTPReportingPeriodStartDate
         '
         Me.DTPReportingPeriodStartDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DTPReportingPeriodStartDate.Location = New System.Drawing.Point(224, 155)
+        Me.DTPReportingPeriodStartDate.Location = New System.Drawing.Point(239, 148)
         Me.DTPReportingPeriodStartDate.Name = "DTPReportingPeriodStartDate"
-        Me.DTPReportingPeriodStartDate.Size = New System.Drawing.Size(121, 20)
+        Me.DTPReportingPeriodStartDate.Size = New System.Drawing.Size(129, 20)
         Me.DTPReportingPeriodStartDate.TabIndex = 6
         Me.DTPReportingPeriodStartDate.Value = New Date(2025, 1, 1, 0, 0, 0, 0)
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(7, 187)
+        Me.Label13.Location = New System.Drawing.Point(8, 178)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(179, 13)
         Me.Label13.TabIndex = 24
@@ -152,44 +152,44 @@ Partial Class FrmMain
         '
         Me.CmbArticle403.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbArticle403.FormattingEnabled = True
-        Me.CmbArticle403.Location = New System.Drawing.Point(224, 288)
+        Me.CmbArticle403.Location = New System.Drawing.Point(239, 275)
         Me.CmbArticle403.Name = "CmbArticle403"
-        Me.CmbArticle403.Size = New System.Drawing.Size(121, 21)
+        Me.CmbArticle403.Size = New System.Drawing.Size(129, 21)
         Me.CmbArticle403.TabIndex = 13
         '
         'CmbDocumentAdoptionStatus
         '
         Me.CmbDocumentAdoptionStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbDocumentAdoptionStatus.FormattingEnabled = True
-        Me.CmbDocumentAdoptionStatus.Location = New System.Drawing.Point(224, 261)
+        Me.CmbDocumentAdoptionStatus.Location = New System.Drawing.Point(239, 249)
         Me.CmbDocumentAdoptionStatus.Name = "CmbDocumentAdoptionStatus"
-        Me.CmbDocumentAdoptionStatus.Size = New System.Drawing.Size(121, 21)
+        Me.CmbDocumentAdoptionStatus.Size = New System.Drawing.Size(129, 21)
         Me.CmbDocumentAdoptionStatus.TabIndex = 11
         '
         'CmbAuditorReportStatementPresent
         '
         Me.CmbAuditorReportStatementPresent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbAuditorReportStatementPresent.FormattingEnabled = True
-        Me.CmbAuditorReportStatementPresent.Location = New System.Drawing.Point(224, 234)
+        Me.CmbAuditorReportStatementPresent.Location = New System.Drawing.Point(239, 223)
         Me.CmbAuditorReportStatementPresent.Name = "CmbAuditorReportStatementPresent"
-        Me.CmbAuditorReportStatementPresent.Size = New System.Drawing.Size(121, 21)
+        Me.CmbAuditorReportStatementPresent.Size = New System.Drawing.Size(129, 21)
         Me.CmbAuditorReportStatementPresent.TabIndex = 10
         '
         'CmbConsolidated
         '
         Me.CmbConsolidated.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbConsolidated.FormattingEnabled = True
-        Me.CmbConsolidated.Location = New System.Drawing.Point(224, 207)
+        Me.CmbConsolidated.Location = New System.Drawing.Point(239, 198)
         Me.CmbConsolidated.Name = "CmbConsolidated"
-        Me.CmbConsolidated.Size = New System.Drawing.Size(121, 21)
+        Me.CmbConsolidated.Size = New System.Drawing.Size(129, 21)
         Me.CmbConsolidated.TabIndex = 9
         '
         'DTPDocumentAdoptionDate
         '
         Me.DTPDocumentAdoptionDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DTPDocumentAdoptionDate.Location = New System.Drawing.Point(521, 261)
+        Me.DTPDocumentAdoptionDate.Location = New System.Drawing.Point(556, 249)
         Me.DTPDocumentAdoptionDate.Name = "DTPDocumentAdoptionDate"
-        Me.DTPDocumentAdoptionDate.Size = New System.Drawing.Size(121, 20)
+        Me.DTPDocumentAdoptionDate.Size = New System.Drawing.Size(129, 20)
         Me.DTPDocumentAdoptionDate.TabIndex = 12
         Me.DTPDocumentAdoptionDate.Value = New Date(2025, 12, 31, 0, 0, 0, 0)
         '
@@ -197,18 +197,18 @@ Partial Class FrmMain
         '
         Me.DTPReportingPeriod.CustomFormat = "yyyy"
         Me.DTPReportingPeriod.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DTPReportingPeriod.Location = New System.Drawing.Point(521, 181)
+        Me.DTPReportingPeriod.Location = New System.Drawing.Point(556, 173)
         Me.DTPReportingPeriod.Name = "DTPReportingPeriod"
-        Me.DTPReportingPeriod.Size = New System.Drawing.Size(73, 20)
+        Me.DTPReportingPeriod.Size = New System.Drawing.Size(78, 20)
         Me.DTPReportingPeriod.TabIndex = 8
         Me.DTPReportingPeriod.Value = New Date(2025, 12, 31, 0, 0, 0, 0)
         '
         'DTPReportingPeriodEndDate
         '
         Me.DTPReportingPeriodEndDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DTPReportingPeriodEndDate.Location = New System.Drawing.Point(224, 181)
+        Me.DTPReportingPeriodEndDate.Location = New System.Drawing.Point(239, 173)
         Me.DTPReportingPeriodEndDate.Name = "DTPReportingPeriodEndDate"
-        Me.DTPReportingPeriodEndDate.Size = New System.Drawing.Size(121, 20)
+        Me.DTPReportingPeriodEndDate.Size = New System.Drawing.Size(129, 20)
         Me.DTPReportingPeriodEndDate.TabIndex = 7
         Me.DTPReportingPeriodEndDate.Value = New Date(2025, 12, 31, 0, 0, 0, 0)
         '
@@ -216,36 +216,36 @@ Partial Class FrmMain
         '
         Me.CmbEntitySize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbEntitySize.FormattingEnabled = True
-        Me.CmbEntitySize.Location = New System.Drawing.Point(224, 128)
+        Me.CmbEntitySize.Location = New System.Drawing.Point(239, 122)
         Me.CmbEntitySize.Name = "CmbEntitySize"
-        Me.CmbEntitySize.Size = New System.Drawing.Size(121, 21)
+        Me.CmbEntitySize.Size = New System.Drawing.Size(129, 21)
         Me.CmbEntitySize.TabIndex = 5
         '
         'TxtEntityLegalForm
         '
-        Me.TxtEntityLegalForm.Location = New System.Drawing.Point(224, 76)
+        Me.TxtEntityLegalForm.Location = New System.Drawing.Point(239, 72)
         Me.TxtEntityLegalForm.Name = "TxtEntityLegalForm"
-        Me.TxtEntityLegalForm.Size = New System.Drawing.Size(536, 20)
+        Me.TxtEntityLegalForm.Size = New System.Drawing.Size(572, 20)
         Me.TxtEntityLegalForm.TabIndex = 3
         '
         'TxtEntityRegisteredOffice
         '
-        Me.TxtEntityRegisteredOffice.Location = New System.Drawing.Point(224, 102)
+        Me.TxtEntityRegisteredOffice.Location = New System.Drawing.Point(239, 97)
         Me.TxtEntityRegisteredOffice.Name = "TxtEntityRegisteredOffice"
-        Me.TxtEntityRegisteredOffice.Size = New System.Drawing.Size(536, 20)
+        Me.TxtEntityRegisteredOffice.Size = New System.Drawing.Size(572, 20)
         Me.TxtEntityRegisteredOffice.TabIndex = 4
         '
         'TxtEntityName
         '
-        Me.TxtEntityName.Location = New System.Drawing.Point(224, 50)
+        Me.TxtEntityName.Location = New System.Drawing.Point(239, 48)
         Me.TxtEntityName.Name = "TxtEntityName"
-        Me.TxtEntityName.Size = New System.Drawing.Size(536, 20)
+        Me.TxtEntityName.Size = New System.Drawing.Size(572, 20)
         Me.TxtEntityName.TabIndex = 2
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(7, 291)
+        Me.Label12.Location = New System.Drawing.Point(8, 278)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(198, 13)
         Me.Label12.TabIndex = 12
@@ -254,7 +254,7 @@ Partial Class FrmMain
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(369, 267)
+        Me.Label11.Location = New System.Drawing.Point(394, 255)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(127, 13)
         Me.Label11.TabIndex = 11
@@ -263,7 +263,7 @@ Partial Class FrmMain
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(7, 267)
+        Me.Label7.Location = New System.Drawing.Point(8, 255)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(134, 13)
         Me.Label7.TabIndex = 10
@@ -272,7 +272,7 @@ Partial Class FrmMain
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(369, 187)
+        Me.Label9.Location = New System.Drawing.Point(394, 178)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(131, 13)
         Me.Label9.TabIndex = 9
@@ -281,7 +281,7 @@ Partial Class FrmMain
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(7, 210)
+        Me.Label8.Location = New System.Drawing.Point(8, 200)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(169, 13)
         Me.Label8.TabIndex = 8
@@ -290,7 +290,7 @@ Partial Class FrmMain
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(7, 237)
+        Me.Label10.Location = New System.Drawing.Point(8, 226)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(119, 13)
         Me.Label10.TabIndex = 7
@@ -299,7 +299,7 @@ Partial Class FrmMain
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(7, 53)
+        Me.Label6.Location = New System.Drawing.Point(8, 50)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(93, 13)
         Me.Label6.TabIndex = 6
@@ -308,7 +308,7 @@ Partial Class FrmMain
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(7, 79)
+        Me.Label5.Location = New System.Drawing.Point(8, 75)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(117, 13)
         Me.Label5.TabIndex = 5
@@ -317,7 +317,7 @@ Partial Class FrmMain
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(7, 105)
+        Me.Label4.Location = New System.Drawing.Point(8, 100)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(147, 13)
         Me.Label4.TabIndex = 4
@@ -326,7 +326,7 @@ Partial Class FrmMain
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(7, 131)
+        Me.Label3.Location = New System.Drawing.Point(8, 125)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(85, 13)
         Me.Label3.TabIndex = 3
@@ -335,7 +335,7 @@ Partial Class FrmMain
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 161)
+        Me.Label2.Location = New System.Drawing.Point(8, 154)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(182, 13)
         Me.Label2.TabIndex = 2
@@ -343,15 +343,15 @@ Partial Class FrmMain
         '
         'TxtKVKNumber
         '
-        Me.TxtKVKNumber.Location = New System.Drawing.Point(224, 24)
+        Me.TxtKVKNumber.Location = New System.Drawing.Point(239, 23)
         Me.TxtKVKNumber.Name = "TxtKVKNumber"
-        Me.TxtKVKNumber.Size = New System.Drawing.Size(109, 20)
+        Me.TxtKVKNumber.Size = New System.Drawing.Size(116, 20)
         Me.TxtKVKNumber.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 27)
+        Me.Label1.Location = New System.Drawing.Point(8, 26)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(127, 13)
         Me.Label1.TabIndex = 0
@@ -361,36 +361,36 @@ Partial Class FrmMain
         '
         Me.GroupBox2.Controls.Add(Me.TxtAnnualReportLocation)
         Me.GroupBox2.Controls.Add(Me.CmdSelectAnnualReport)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 364)
+        Me.GroupBox2.Location = New System.Drawing.Point(13, 347)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(776, 68)
+        Me.GroupBox2.Size = New System.Drawing.Size(828, 65)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Annual report"
         '
         'TxtAnnualReportLocation
         '
-        Me.TxtAnnualReportLocation.Location = New System.Drawing.Point(6, 28)
+        Me.TxtAnnualReportLocation.Location = New System.Drawing.Point(6, 27)
         Me.TxtAnnualReportLocation.Name = "TxtAnnualReportLocation"
         Me.TxtAnnualReportLocation.ReadOnly = True
-        Me.TxtAnnualReportLocation.Size = New System.Drawing.Size(674, 20)
+        Me.TxtAnnualReportLocation.Size = New System.Drawing.Size(719, 20)
         Me.TxtAnnualReportLocation.TabIndex = 14
         Me.TxtAnnualReportLocation.TabStop = False
         '
         'CmdSelectAnnualReport
         '
-        Me.CmdSelectAnnualReport.Location = New System.Drawing.Point(686, 26)
+        Me.CmdSelectAnnualReport.Location = New System.Drawing.Point(732, 25)
         Me.CmdSelectAnnualReport.Name = "CmdSelectAnnualReport"
-        Me.CmdSelectAnnualReport.Size = New System.Drawing.Size(75, 23)
+        Me.CmdSelectAnnualReport.Size = New System.Drawing.Size(80, 22)
         Me.CmdSelectAnnualReport.TabIndex = 15
         Me.CmdSelectAnnualReport.Text = "Select"
         Me.CmdSelectAnnualReport.UseVisualStyleBackColor = True
         '
         'CmdClose
         '
-        Me.CmdClose.Location = New System.Drawing.Point(713, 512)
+        Me.CmdClose.Location = New System.Drawing.Point(760, 488)
         Me.CmdClose.Name = "CmdClose"
-        Me.CmdClose.Size = New System.Drawing.Size(75, 23)
+        Me.CmdClose.Size = New System.Drawing.Size(80, 22)
         Me.CmdClose.TabIndex = 19
         Me.CmdClose.Text = "Close"
         Me.CmdClose.UseVisualStyleBackColor = True
@@ -399,36 +399,36 @@ Partial Class FrmMain
         '
         Me.GroupBox3.Controls.Add(Me.TxtSaveLocationRP)
         Me.GroupBox3.Controls.Add(Me.CmdSelectSaveLocation)
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 438)
+        Me.GroupBox3.Location = New System.Drawing.Point(13, 418)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(776, 68)
+        Me.GroupBox3.Size = New System.Drawing.Size(828, 65)
         Me.GroupBox3.TabIndex = 4
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Save location Report Package"
         '
         'TxtSaveLocationRP
         '
-        Me.TxtSaveLocationRP.Location = New System.Drawing.Point(6, 28)
+        Me.TxtSaveLocationRP.Location = New System.Drawing.Point(6, 27)
         Me.TxtSaveLocationRP.Name = "TxtSaveLocationRP"
         Me.TxtSaveLocationRP.ReadOnly = True
-        Me.TxtSaveLocationRP.Size = New System.Drawing.Size(674, 20)
+        Me.TxtSaveLocationRP.Size = New System.Drawing.Size(719, 20)
         Me.TxtSaveLocationRP.TabIndex = 14
         Me.TxtSaveLocationRP.TabStop = False
         '
         'CmdSelectSaveLocation
         '
-        Me.CmdSelectSaveLocation.Location = New System.Drawing.Point(686, 26)
+        Me.CmdSelectSaveLocation.Location = New System.Drawing.Point(732, 25)
         Me.CmdSelectSaveLocation.Name = "CmdSelectSaveLocation"
-        Me.CmdSelectSaveLocation.Size = New System.Drawing.Size(75, 23)
+        Me.CmdSelectSaveLocation.Size = New System.Drawing.Size(80, 22)
         Me.CmdSelectSaveLocation.TabIndex = 16
         Me.CmdSelectSaveLocation.Text = "Select"
         Me.CmdSelectSaveLocation.UseVisualStyleBackColor = True
         '
         'CmdInfo
         '
-        Me.CmdInfo.Location = New System.Drawing.Point(12, 512)
+        Me.CmdInfo.Location = New System.Drawing.Point(13, 488)
         Me.CmdInfo.Name = "CmdInfo"
-        Me.CmdInfo.Size = New System.Drawing.Size(75, 23)
+        Me.CmdInfo.Size = New System.Drawing.Size(80, 22)
         Me.CmdInfo.TabIndex = 17
         Me.CmdInfo.Text = "Info"
         Me.CmdInfo.UseVisualStyleBackColor = True
@@ -437,14 +437,17 @@ Partial Class FrmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(795, 540)
+        Me.ClientSize = New System.Drawing.Size(844, 514)
         Me.Controls.Add(Me.CmdInfo)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.CmdClose)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.CmdCreate)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmMain"
         Me.Text = "SBR Creation for Other GAAP Package"
         Me.GroupBox1.ResumeLayout(False)

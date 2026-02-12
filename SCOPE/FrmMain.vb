@@ -10,7 +10,7 @@ Imports System.Xml
 Imports DevExpress
 Imports DevExpress.Xpo
 Imports MS.Win32
-
+Imports System.Text.RegularExpressions
 
 Public Class FrmMain
 
@@ -113,6 +113,18 @@ Public Class FrmMain
         End If
 
         '=============================
+        ' Check if syntax KVK-number is correct
+        '=============================
+
+        If Not Regex.IsMatch(TxtKVKNumber.Text, "^\d{8}$") Then
+
+            MsgBox("Syntax of KVK Registration Number is not correct", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical, "SCOPE")
+
+            Exit Sub
+
+        End If
+
+        '=============================
         ' Define base directory
         '=============================
 
@@ -173,7 +185,7 @@ Public Class FrmMain
 
         Catch ex As Exception
 
-            MsgBox("Could not create the Report Package. Please check whether you have sufficient permissions.", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "SCOPE")
+            MsgBox("Could not create the Report Package. Package already exists or you do not have sufficient permissions.", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "SCOPE")
 
             SubDeleteTempFolder()
 
@@ -190,7 +202,7 @@ Public Class FrmMain
         ' Remove files from temp SCOPE directory 
         '==============================================
 
-        My.Computer.FileSystem.DeleteDirectory($"{My.Computer.FileSystem.SpecialDirectories.Temp}/SCOPE", FileIO.DeleteDirectoryOption.DeleteAllContents)
+        My.Computer.FileSystem.DeleteDirectory($"{My.Computer.FileSystem.SpecialDirectories.Temp}\SCOPE", FileIO.DeleteDirectoryOption.DeleteAllContents)
 
     End Sub
 
