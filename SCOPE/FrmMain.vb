@@ -178,7 +178,7 @@ Public Class FrmMain
 
         Try
 
-            Dim StrSource As String = $"{My.Computer.FileSystem.SpecialDirectories.Temp}/SCOPE/{StrBaseDirectory}/"
+            Dim StrSource As String = $"{My.Computer.FileSystem.SpecialDirectories.Temp}/SCOPE/{StrBaseDirectory}/{StrBaseDirectory}"
             Dim StrXBRI As String = $"{TxtSaveLocationRP.Text}\{StrBaseDirectory}.xbri"
 
             ZipFile.CreateFromDirectory(StrSource, StrXBRI, CompressionLevel.Optimal, True)
