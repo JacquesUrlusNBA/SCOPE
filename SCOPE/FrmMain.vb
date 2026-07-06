@@ -7,8 +7,6 @@ Imports System.Text
 Imports System.Text.Json
 Imports System.Text.Json.Serialization
 Imports System.Xml
-Imports DevExpress
-Imports DevExpress.Xpo
 Imports MS.Win32
 Imports System.Text.RegularExpressions
 
@@ -95,20 +93,44 @@ Public Class FrmMain
 
     Private Sub CmdCreate_Click(sender As Object, e As EventArgs) Handles CmdCreate.Click
 
-        '=============================
-        ' Check if all necessary data is being provided
-        '=============================
 
-        If String.IsNullOrEmpty(TxtKVKNumber.Text) Or
+        If ChkSaveOnlyKvKFile.Checked = False Then
+
+
+            '=============================
+            ' Check if all necessary data is being provided
+            '=============================
+
+            If String.IsNullOrEmpty(TxtKVKNumber.Text) Or
         String.IsNullOrEmpty(TxtEntityName.Text) Or
         String.IsNullOrEmpty(TxtEntityLegalForm.Text) Or
         String.IsNullOrEmpty(TxtEntityRegisteredOffice.Text) Or
         String.IsNullOrEmpty(TxtAnnualReportLocation.Text) Or
         String.IsNullOrEmpty(TxtSaveLocationRP.Text) Then
 
-            MsgBox("Not all data for creating a Report Package is provided.", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical, "SCOPE")
+                MsgBox("Not all data for creating a Report Package is provided.", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical, "SCOPE")
 
-            Exit Sub
+                Exit Sub
+
+            End If
+
+        Else
+
+            '=============================
+            ' Check if all necessary data is being provided
+            '=============================
+
+            If String.IsNullOrEmpty(TxtKVKNumber.Text) Or
+        String.IsNullOrEmpty(TxtEntityName.Text) Or
+        String.IsNullOrEmpty(TxtEntityLegalForm.Text) Or
+        String.IsNullOrEmpty(TxtEntityRegisteredOffice.Text) Or
+        String.IsNullOrEmpty(TxtSaveLocationRP.Text) Then
+
+                MsgBox("Not all data for creating a xhtml file is provided.", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical, "SCOPE")
+
+                Exit Sub
+
+            End If
 
         End If
 
@@ -136,11 +158,15 @@ Public Class FrmMain
 
         SubCreateFolderStructure(StrBaseDirectory)
 
-        '=============================
-        ' Create reportPackage.json
-        '=============================
+        If ChkSaveOnlyKvKFile.Checked = False Then
 
-        SubCreateReportPackageJSON(StrBaseDirectory)
+            '=============================
+            ' Create reportPackage.json
+            '=============================
+
+            SubCreateReportPackageJSON(StrBaseDirectory)
+
+        End If
 
         '=============================
         ' Create KVK-file
@@ -148,17 +174,29 @@ Public Class FrmMain
 
         SubCreateKVKFile(StrBaseDirectory)
 
-        '=============================
-        ' Copy annual report
-        '=============================
+        If ChkSaveOnlyKvKFile.Checked = False Then
 
-        SubCopyAnnualReport(StrBaseDirectory)
+            '=============================
+            ' Copy annual report
+            '=============================
 
-        '=============================
-        ' Create xbri-file
-        '=============================
+            SubCopyAnnualReport(StrBaseDirectory)
 
-        SubCreateXBRIFile(StrBaseDirectory)
+            '=============================
+            ' Create xbri-file
+            '=============================
+
+            SubCreateXBRIFile(StrBaseDirectory)
+
+        Else 'Copy only xhtml with mandate elements
+
+            '=============================
+            ' Save KVK xhtml file
+            '=============================
+
+            SubCopyXHTMLFile(StrBaseDirectory)
+
+        End If
 
         '=============================
         ' Remove files in TEMP folder
@@ -171,6 +209,27 @@ Public Class FrmMain
         '=============================
 
         MsgBox($"Report Package for Other GAAP {TxtSaveLocationRP.Text}\{StrBaseDirectory}.xbri is succesfully created.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "SCOPE")
+
+    End Sub
+
+
+
+    Private Sub SubCopyXHTMLFile(StrBaseDirectory As String)
+
+        Try
+
+            Dim StrSource As String = $"{My.Computer.FileSystem.SpecialDirectories.Temp}/SCOPE/{StrBaseDirectory}/{StrBaseDirectory}/reports/annualreport/kvk-{DTPReportingPeriodEndDate.Value:yyyy-MM-dd}-en.xhtml"
+            Dim StrXHTML As String = $"{TxtSaveLocationRP.Text}/kvk-{DTPReportingPeriodEndDate.Value:yyyy-MM-dd}-en.xhtml"
+
+            File.Copy(StrSource, StrXHTML)
+
+        Catch ex As Exception
+
+            MsgBox("Could not copy the xhtml file. File already exists or you do not have sufficient permissions.", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "SCOPE")
+
+            SubDeleteTempFolder()
+
+        End Try
 
     End Sub
 
@@ -189,10 +248,7 @@ Public Class FrmMain
 
             SubDeleteTempFolder()
 
-            Me.Close()
-
         End Try
-
 
     End Sub
 
@@ -202,7 +258,14 @@ Public Class FrmMain
         ' Remove files from temp SCOPE directory 
         '==============================================
 
-        My.Computer.FileSystem.DeleteDirectory($"{My.Computer.FileSystem.SpecialDirectories.Temp}\SCOPE", FileIO.DeleteDirectoryOption.DeleteAllContents)
+        Try
+
+            My.Computer.FileSystem.DeleteDirectory($"{My.Computer.FileSystem.SpecialDirectories.Temp}\SCOPE", FileIO.DeleteDirectoryOption.DeleteAllContents)
+
+        Catch ex As Exception
+
+        End Try
+
 
     End Sub
 
