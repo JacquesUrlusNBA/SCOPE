@@ -8,4 +8,6 @@ SCOPE (**S**BR **C**reation for **O**ther GAAP **P**ackag**e**) prepares the req
 
 A compiled version of SCOPE can be found in the map 'Program'. The application is signed by the 'Nederlandse Beroepsorganisatie van Accountants'. If specific dll's are needed a complete installation can be found at the releases.
 
+In version SCOPE v.1.0.0.3 the possibility to create and save only the xhtml file with the mandated elements is being added.
+
 Questions can be send to sbr@nba.nl.
